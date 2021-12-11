@@ -1,0 +1,32 @@
+{
+  "name": "rabbit-chaser",
+  "version": "1.0.0",
+  "description": "I show you how deep the rabbit hole goes",
+  "main": "out-tsc/hello-world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf out-tsc && tsc",
+    "start": "node out-tsc/hello-world",
+    "serve": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-thompson-code/rabbit-chaser.git"
+  },
+  "keywords": [
+    "matrix",
+    "typescript",
+    "ts",
+    "ben",
+    "awad"
+  ],
+  "author": "mark thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-thompson-code/rabbit-chaser/issues"
+  },
+  "homepage": "https://github.com/m-thompson-code/rabbit-chaser#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

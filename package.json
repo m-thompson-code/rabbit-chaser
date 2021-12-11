@@ -1,6 +1,6 @@
 {
   "name": "rabbit-chaser",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "I show you how deep the rabbit hole goes",
   "main": "out-tsc/hello-world.js",
   "scripts": {

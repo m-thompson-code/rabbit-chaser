@@ -1,13 +1,16 @@
 {
   "name": "rabbit-chaser",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "description": "I show you how deep the rabbit hole goes",
-  "main": "out-tsc/hello-world.js",
+  "types": "out-tsc/index.d.ts",
+  "main": "out-tsc/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx jest",
     "build": "rimraf out-tsc && tsc",
+    "prepublish": "npm run test && npm run build",
     "start": "node out-tsc/hello-world",
-    "serve": "npm run build && npm run start"
+    "serve": "npm run build && npm run start",
+    "deploy": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,14 @@
   },
   "homepage": "https://github.com/m-thompson-code/rabbit-chaser#readme",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.16.0",
+    "jest": "^27.4.4",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@types/jest": "^27.0.3",
+    "babel-jest": "^27.4.4"
   }
 }
